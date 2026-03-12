@@ -1,12 +1,66 @@
+/* properties */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     background-color: rgb(203, 212, 215);
     color: darkblue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    padding: 30px;
 }
+
+
+
+/* Element selector */
 p{
     line-height: 1.5em;
 }
 
+/* Class selector */
+.highlight{
+    color: darkred;
+    font-weight: bold;
+    color: black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.nickname{
+    color: purple;
+}
+
+.important{
+    background-color: yellow;
+}
+
+/* ID selectors */
+#mainTitle{
+    text-align: center;
+}
+
+#backgroundTitle{
+    color: darkgreen;
+}
+
+#hobbiesTitle{
+    color: darkorange;
+}
+
+#futureTitle{
+    color: darkblue;
+}
+
+/* Multiple selector (comma) */ 
+h1, h2, h3{
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Descendant selector (space) */
+p a{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Image styling */
 img {
     width: 300px;
     float: left;
@@ -14,5 +68,3 @@ img {
     border-radius: 9px;
     margin-right: 20px;
 }
-
-
