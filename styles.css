@@ -68,3 +68,40 @@ img {
     border-radius: 9px;
     margin-right: 20px;
 }
+
+/* Pseudo selectors */
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: rgb(255, 48, 241);
+}
+
+a:active{
+    color: orange;
+}
+
+/* Responsive breakpoints */
+
+/* Tablet */
+@media (max-width: 900px){
+    body{
+        padding:20px;
+    }
+}
+
+/* Large phone */
+@media (max-width: 600px){
+    img{
+        width:200px;
+    }
+}
+
+/* Small phone */
+@media (max-width: 400px){
+    h1{
+        font-size:22px;
+    }
+}
