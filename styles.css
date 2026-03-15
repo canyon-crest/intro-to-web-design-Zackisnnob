@@ -1,5 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
 /* properties */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body{
+    max-width:100%;
+    overflow-x:hidden;
+}
 
 body{
     background-color: rgb(203, 212, 215);
@@ -118,13 +127,30 @@ img:hover{
     }
 }
 
+@media (max-width:900px){
 #container{
-    width:1250px;
-    margin: 0 auto;
+width:95%;
+}
+
+p{
+margin-right:0;
+}
+
+p.left-column{
+margin-left:0;
+}
+}
+
+#container{
+    max-width:1250px;  
+    width:100%;        
+    margin:0 auto;
     background-color: lightblue;
-    padding: 30px;
+    padding:30px;
     border-left: double white 5px;
     border-right: double white 5px;
+    box-sizing:border-box; 
+
 }
 h1{
     background-color: rgb(244, 103, 103);
