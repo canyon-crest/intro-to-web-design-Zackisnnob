@@ -105,40 +105,29 @@ img:hover{
 }
 
 
-/* Tablet */
-@media (max-width: 900px){
-    body{
-        padding:20px;
-    }
+@media (max-width: 1200px) {
+  #container {
+    width: 600px;
+  }
 }
 
-/* Large phone */
-@media (max-width: 600px){
-    img, #sidebar {
-        width:200px;
-        display:none;
-    }
+@media (max-width: 992px) {
+  #container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  body {
+    padding: 20px;
+    background-color: antiquewhite
+  }
 }
 
-/* Small phone */
-@media (max-width: 400px){
-    h1{
-        font-size:22px;
-    }
-}
-
-@media (max-width:900px){
-#container{
-width:95%;
-}
-
-p{
-margin-right:0;
-}
-
-p.left-column{
-margin-left:0;
-}
+@media (max-width: 768px) {
+  #sidebar{
+    display: none;
+  }
 }
 
 #container{
