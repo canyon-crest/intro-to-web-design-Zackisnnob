@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-/* properties */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 html, body{
@@ -19,14 +18,12 @@ body{
 }
 
 
-
-/* Element selector */
 p{
     line-height: 1.5em;
     font-size: 1.1em;
 }
 
-/* Class selector */
+
 .highlight{
     color: darkred;
     font-weight: bold;
@@ -36,14 +33,14 @@ p{
 }
 
 .nickname{
-    color: purple;
+    color: rgb(222, 42, 222);
 }
 
 .important{
     background-color: yellow;
 }
 
-/* ID selectors */
+
 #mainTitle{
     text-align: center;
 }
@@ -53,27 +50,27 @@ p{
 }
 
 #hobbiesTitle{
-    color: darkorange;
+    color: rgb(202, 169, 4);
 }
 
 #futureTitle{
     color: darkblue;
 }
 
-/* Multiple selector (comma) */ 
+
 h1, h2, h3{
     font-family: Georgia, "Times New Roman", serif;
     
 }
 
-/* Descendant selector (space) */
+
 p a{
     color: blue;
     text-decoration: underline;
 
 }
 
-/* Image styling */
+
 img, #sidebar {
     width: 300px;
 }
@@ -86,7 +83,6 @@ img {
     clear: both;
 }
 
-/* Pseudo selectors */
 
 a:hover{
     color: red;
@@ -179,7 +175,8 @@ p.left-column {
 }
 
 #sidebar{
-    background-color: rgb(200, 156, 244);
+    /* background-color: rgb(138, 168, 255); */
+    background-color: rgb(255, 193, 122);
     border: solid white 3px;
     padding: 20px;
     float: right;
