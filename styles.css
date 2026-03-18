@@ -121,8 +121,21 @@ img:hover{
 }
 
 @media (max-width: 768px) {
-  #sidebar{
+  #sidebar {
     display: none;
+  }
+  img {
+    display: none;
+    float: none;
+  }
+  p {
+    margin-right: 0;
+  }
+  p.left-column {
+    margin-left: 0;
+  }
+  h3 {
+    clear: none;
   }
 }
 
@@ -132,8 +145,7 @@ img:hover{
     margin:0 auto;
     background-color: lightblue;
     padding:30px;
-    border-left: double white 5px;
-    border-right: double white 5px;
+    border: double white 5px;
     box-sizing:border-box; 
 
 }
@@ -162,7 +174,7 @@ h3:first-of-type {
 
 p{
     line-height: 2.25em;
-    margin-right: 350px;
+    margin-right: 0px;
 }
 
 p.left-column {
