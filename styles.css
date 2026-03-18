@@ -93,7 +93,7 @@ a:visited{
 }
 
 a:active{
-    color: orange;
+    color: rgb(239, 255, 91);
 }
 img:hover{
     border-color: yellow;
@@ -191,3 +191,138 @@ p.left-column {
 ul{
     line-height: 2em;
 }
+
+
+body {
+    cursor: url('images/volleyball-cursor.png') 0 0, auto;
+}
+
+a, a:hover, a:visited, a:active {
+    cursor: url('images/volleyball-cursor.png') 0 0, auto;
+}
+
+
+
+#ferret-track {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: visible;
+}
+ 
+#ferret-container {
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    animation: ferret-run 30s linear infinite;
+}
+ 
+#ferret {
+    position: relative;
+    height: 70px;
+    width: auto;
+    border: none !important;
+    border-radius: 0 !important;
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: block;
+}
+ 
+#ferret-bubble {
+    position: absolute;
+    background: white;
+    border: 2px solid #555;
+    border-radius: 12px;
+    padding: 4px 8px;
+    font-size: 0.7em;
+    font-family: Arial, sans-serif;
+    color: #333;
+    white-space: nowrap;
+    top: -38px;
+    left: 75px;
+    animation: bubble-unflip 30s steps(1) infinite;
+}
+ 
+#ferret-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    border-width: 8px 6px 0 6px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    animation: bubble-tail 30s steps(1) infinite;
+}
+ 
+@keyframes ferret-run {
+    0%    { left: 0;                  transform: scaleX(1);  }
+    49.9% { left: calc(100% - 70px); transform: scaleX(1);  }
+    50%   { left: calc(100% - 70px); transform: scaleX(-1); }
+    99.9% { left: 0;                 transform: scaleX(-1); }
+    100%  { left: 0;                 transform: scaleX(1);  }
+}
+ 
+@keyframes bubble-unflip {
+    0%    { transform: scaleX(1);  }
+    49.9% { transform: scaleX(1);  }
+    50%   { transform: scaleX(-1); }
+    99.9% { transform: scaleX(-1); }
+    100%  { transform: scaleX(1);  }
+}
+ 
+@keyframes bubble-tail {
+    0%    { left: 10px;  right: auto; }
+    49.9% { left: 10px;  right: auto; }
+    50%   { left: auto;  right: 10px; }
+    99.9% { left: auto;  right: 10px; }
+    100%  { left: 10px;  right: auto; }
+}
+ 
+#ferret-normal { display: block; }
+#ferret-scared { display: none;  }
+
+#ferret-container:hover #ferret-normal { display: none; }
+#ferret-container:hover #ferret-scared { display: block; }
+
+#ferret-container:hover #ferret-bubble span::before { content: "Whoa! A volleyball!"; }
+#ferret-bubble span::before { content: "Hello! You got food?"; }
+
+#ferret-scared {
+    height: 70px;
+    width: auto;
+    border: none !important;
+    border-radius: 0 !important;
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: none;
+}
+
+#ferret-normal {
+    height: 70px !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: block !important;
+}
+
+#ferret-scared {
+    height: 70px !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: none !important;
+}
+
+#ferret-container:hover #ferret-normal { display: none !important; }
+#ferret-container:hover #ferret-scared { display: block !important; }
