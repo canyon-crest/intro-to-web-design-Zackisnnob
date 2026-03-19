@@ -3,47 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="styles.css" type="text/css" />
-
     <title>About Me</title>
 </head>
 <body id="mainPage">
+
+    <!-- Left sticker strip: 3 ferrets -->
     <div id="sticker-left">
-    <img src="images/ferret1.jpg" alt="Ferret sticker 1" class="sticker" />
-    <img src="images/ferret2.jpg" alt="Ferret sticker 2" class="sticker" />
-    <img src="images/ferret3.jpg" alt="Ferret sticker 3" class="sticker" />
+        <div class="sticker-wrap" data-tip="Ferrets are my fav! 🐾">
+            <img src="images/ferret1.jpg" alt="Ferret sticker 1" class="sticker" />
+        </div>
+        <div class="sticker-wrap" data-tip="Look at him sleep 😴">
+            <img src="images/ferret2.jpg" alt="Ferret sticker 2" class="sticker" />
+        </div>
+        <div class="sticker-wrap" data-tip="He's so curious! 👀">
+            <img src="images/ferret3.jpg" alt="Ferret sticker 3" class="sticker" />
+        </div>
     </div>
+
+    <!-- Right sticker strip: 3 volleyballs -->
     <div id="sticker-right">
-    <img src="images/vb1.jpg"  alt="Volleyball sticker 1" class="sticker" />
-    <img src="images/vb2.png"  alt="Volleyball sticker 2" class="sticker" />
-    <img src="images/vb3.jpg"  alt="Volleyball sticker 3" class="sticker" />
+        <div class="sticker-wrap" data-tip="Serving up wins! 🏐">
+            <img src="images/vb1.jpg" alt="Volleyball sticker 1" class="sticker" />
+        </div>
+        <div class="sticker-wrap" data-tip="That block tho! 🙌">
+            <img src="images/vb2.png" alt="Volleyball sticker 2" class="sticker" />
+        </div>
+        <div class="sticker-wrap" data-tip="Team spirit! 🏆">
+            <img src="images/vb3.jpg" alt="Volleyball sticker 3" class="sticker" />
+        </div>
     </div>
+
     <div id="container">
     <div class="content">
+
     <div id="ferret-track">
-    <div id="ferret-container">
-    <img src="images/ferret.gif" id="ferret-normal" alt="Running ferret" />
-    <img src="images/meemoo-feefoo.gif" id="ferret-scared" alt="Surprised ferret" />
-    <div id="ferret-bubble"><span></span></div>
+        <div id="ferret-container">
+            <img src="images/ferret.gif" id="ferret-normal" alt="Running ferret" />
+            <img src="images/meemoo-feefoo.gif" id="ferret-scared" alt="Surprised ferret" />
+            <div id="ferret-bubble"><span></span></div>
+        </div>
     </div>
-    </div>
-</div>
 
     <h1 id="mainTitle">My name is <span class="highlight">Yangminxing Wu</span>.</h1>
     <h2>Feel free to call me <span class="nickname">Zack</span>!</h2>
 
-<div id="sidebar">
-    <h3>Fun Facts</h3>
-    <ul>
-        <li>I love <a href="https://www.chewy.com/education/small-pet/ferret/19-ferret-facts-you-need-to-know">ferrets</a> (Here's 15 fun facts about them!)</li>
-        <li>I have a twin sister</li>
-        <li>I am bilingual </li>
-    </ul>
-</div>
+    <div id="sidebar">
+        <h3>Fun Facts</h3>
+        <ul>
+            <li>I love <a href="https://www.chewy.com/education/small-pet/ferret/19-ferret-facts-you-need-to-know">ferrets</a> (Here's 15 fun facts about them!)</li>
+            <li>I have a twin sister</li>
+            <li>I am bilingual</li>
+        </ul>
+    </div>
 
     <h3 id="backgroundTitle">Background</h3>
-    
     <img src="images/Elementary School.jpg" alt="My Old Elementary School Back In China" />
     <p>
         I moved to the <span class="important">United States</span> when I was in second grade, which was a big change for me at a young age. 
@@ -55,7 +69,6 @@
         <a href="https://www.afsusa.org/countries/china/">my culture</a> and the opportunities around me.
     </p>
 
-    
     <h3 id="hobbiesTitle">My Hobbies</h3>
     <img src="images/Volleyball.jpg" id="vb-img" alt="Volleyball Image" />
     <p class="left-column">
@@ -83,8 +96,7 @@
         No matter which path I choose, my goal is to keep learning and build something meaningful that can help others.
     </p>
 
-
-</div>
-</div>
+    </div>
+    </div>
 </body>
 </html>
