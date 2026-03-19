@@ -20,7 +20,13 @@ body {
     font-size: 18px;
 }
 
+p.para-style {
+    border-left: 3px solid rgba(94, 189, 110, 0.4);
+    padding-left: 12px;
+}
+
 p {
+    font-family: 'Jost', Arial, sans-serif;
     line-height: 2em;
     font-size: 1.05em;
     color: #3a2e1e;
